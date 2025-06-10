@@ -1,0 +1,1226 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/29/2025 3:32:55 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-IR5V3MM"
+  DTS:CreatorName="DESKTOP-IR5V3MM\c411i"
+  DTS:DTSID="{E972112C-0E85-4B4C-9BB1-0A24FC8DBE7B}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
+  DTS:LocaleID="3082"
+  DTS:ObjectName="03-Datamart_dimproducto"
+  DTS:PackageType="5"
+  DTS:VersionBuild="17"
+  DTS:VersionGUID="{F7AE1A68-AA92-408F-963A-29189DBF5160}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-IR5V3MM.datamart_northwind]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{E9ADF683-11D7-427C-B944-61A5BFCB1139}"
+      DTS:ObjectName="DESKTOP-IR5V3MM.datamart_northwind">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-IR5V3MM;Initial Catalog=datamart_northwind;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-03-Datamart_dimproducto-{E9ADF683-11D7-427C-B944-61A5BFCB1139}DESKTOP-IR5V3MM.datamart_northwind;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-IR5V3MM.stage_northwind]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{1EFB4382-C503-49AF-92B7-724FBF288144}"
+      DTS:ObjectName="DESKTOP-IR5V3MM.stage_northwind">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-IR5V3MM;Initial Catalog=stage_northwind;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-02-Datamart_dimempleado-{1EFB4382-C503-49AF-92B7-724FBF288144}DESKTOP-IR5V3MM.stage_northwind;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.datamart_northwind]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{A087A788-B6D0-4A65-B5FB-3EAE9A19BD33}"
+      DTS:ObjectName="LocalHost.datamart_northwind">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Initial Catalog=datamart_northwind;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-02-Datamart_dimempleado-{A087A788-B6D0-4A65-B5FB-3EAE9A19BD33}LocalHost.datamart_northwind;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\CARGAR DIM_EMPLEADO"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{F0BE6E8D-D5D5-43ED-B1BD-CEA96DF46594}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="CARGAR DIM_EMPLEADO"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\CARGAR DIM_EMPLEADO\Dim_empleado"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="Dim_empleado"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[dim_empleado]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\CARGAR DIM_EMPLEADO\Dim_empleado.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.datamart_northwind]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.datamart_northwind]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Output].Columns[empleado_SKey]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Output].ExternalColumns[empleado_SKey]"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Output].Columns[empleado_SKey]"
+                      name="empleado_SKey"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Output].Columns[empleado_codigoBKey]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Output].ExternalColumns[empleado_codigoBKey]"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Output].Columns[empleado_codigoBKey]"
+                      name="empleado_codigoBKey"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Output].Columns[empleado_NombreCompleto]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Output].ExternalColumns[empleado_NombreCompleto]"
+                      length="100"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Output].Columns[empleado_NombreCompleto]"
+                      name="empleado_NombreCompleto"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Output].ExternalColumns[empleado_SKey]"
+                      dataType="i4"
+                      name="empleado_SKey" />
+                    <externalMetadataColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Output].ExternalColumns[empleado_codigoBKey]"
+                      dataType="i4"
+                      name="empleado_codigoBKey" />
+                    <externalMetadataColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Output].ExternalColumns[empleado_NombreCompleto]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="empleado_NombreCompleto" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Error Output].Columns[empleado_SKey]"
+                      dataType="i4"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Error Output].Columns[empleado_SKey]"
+                      name="empleado_SKey" />
+                    <outputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Error Output].Columns[empleado_codigoBKey]"
+                      dataType="i4"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Error Output].Columns[empleado_codigoBKey]"
+                      name="empleado_codigoBKey" />
+                    <outputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Error Output].Columns[empleado_NombreCompleto]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Error Output].Columns[empleado_NombreCompleto]"
+                      name="empleado_NombreCompleto" />
+                    <outputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\CARGAR DIM_EMPLEADO\Filtrar empleados_Nuevos"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Filtrar empleados_Nuevos"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\CARGAR DIM_EMPLEADO\Filtrar empleados_Nuevos.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\Filtrar empleados_Nuevos.Inputs[Conditional Split Input].Columns[empleado_codigoBKey]"
+                      cachedDataType="i4"
+                      cachedName="empleado_codigoBKey"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\left join.Outputs[Merge Join Output].Columns[empleado_codigoBKey]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\CARGAR DIM_EMPLEADO\Filtrar empleados_Nuevos.Outputs[Empleados_Nuevos]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Empleados_Nuevos"
+                  synchronousInputId="Package\CARGAR DIM_EMPLEADO\Filtrar empleados_Nuevos.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">[ISNULL](#{Package\CARGAR DIM_EMPLEADO\left join.Outputs[Merge Join Output].Columns[empleado_codigoBKey]})</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">ISNULL(empleado_codigoBKey)</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\CARGAR DIM_EMPLEADO\Filtrar empleados_Nuevos.Outputs[Conditional Split Default Output]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="Conditional Split Default Output"
+                  synchronousInputId="Package\CARGAR DIM_EMPLEADO\Filtrar empleados_Nuevos.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\CARGAR DIM_EMPLEADO\Filtrar empleados_Nuevos.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\CARGAR DIM_EMPLEADO\Filtrar empleados_Nuevos.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\Filtrar empleados_Nuevos.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\Filtrar empleados_Nuevos.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\Filtrar empleados_Nuevos.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\Filtrar empleados_Nuevos.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\CARGAR DIM_EMPLEADO\left join"
+              componentClassID="Microsoft.MergeJoin"
+              contactInfo="Merge Join;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combine two sorted data flows into one using the FULL, LEFT, or INNER join. We recommend this transformation when data flows can be sorted at their sources."
+              name="left join"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of join to perform."
+                  name="JoinType"
+                  typeConverter="JoinType">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of columns in the ordering key."
+                  name="NumKeyColumns">1</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the null values are treated as equal values."
+                  name="TreatNullsAsEqual">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Indicates the requested maximum buffers per input before blocking."
+                  name="MaxBuffersPerInput">5</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\CARGAR DIM_EMPLEADO\left join.Inputs[Merge Join Left Input]"
+                  hasSideEffects="true"
+                  name="Merge Join Left Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\left join.Inputs[Merge Join Left Input].Columns[empleadoid]"
+                      cachedDataType="i4"
+                      cachedName="empleadoid"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\Ordenar Stage_empleadp.Outputs[Sort Output].Columns[empleadoid]" />
+                    <inputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\left join.Inputs[Merge Join Left Input].Columns[nombre completo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="31"
+                      cachedName="nombre completo"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\Ordenar Stage_empleadp.Outputs[Sort Output].Columns[nombre completo]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\CARGAR DIM_EMPLEADO\left join.Inputs[Merge Join Right Input]"
+                  hasSideEffects="true"
+                  name="Merge Join Right Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\left join.Inputs[Merge Join Right Input].Columns[empleado_codigoBKey]"
+                      cachedDataType="i4"
+                      cachedName="empleado_codigoBKey"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\Ordenar Dim_empleado.Outputs[Sort Output].Columns[empleado_codigoBKey]" />
+                    <inputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\left join.Inputs[Merge Join Right Input].Columns[empleado_NombreCompleto]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="empleado_NombreCompleto"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\Ordenar Dim_empleado.Outputs[Sort Output].Columns[empleado_NombreCompleto]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\CARGAR DIM_EMPLEADO\left join.Outputs[Merge Join Output]"
+                  isSorted="true"
+                  name="Merge Join Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\left join.Outputs[Merge Join Output].Columns[empleadoid]"
+                      dataType="i4"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\left join.Outputs[Merge Join Output].Columns[empleadoid]"
+                      name="empleadoid"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\CARGAR DIM_EMPLEADO\left join.Inputs[Merge Join Left Input].Columns[empleadoid]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\left join.Outputs[Merge Join Output].Columns[nombre completo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="31"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\left join.Outputs[Merge Join Output].Columns[nombre completo]"
+                      name="nombre completo">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\CARGAR DIM_EMPLEADO\left join.Inputs[Merge Join Left Input].Columns[nombre completo]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\left join.Outputs[Merge Join Output].Columns[empleado_codigoBKey]"
+                      dataType="i4"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\left join.Outputs[Merge Join Output].Columns[empleado_codigoBKey]"
+                      name="empleado_codigoBKey">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\CARGAR DIM_EMPLEADO\left join.Inputs[Merge Join Right Input].Columns[empleado_codigoBKey]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\left join.Outputs[Merge Join Output].Columns[empleado_nombreCompleto]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\left join.Outputs[Merge Join Output].Columns[empleado_nombreCompleto]"
+                      name="empleado_nombreCompleto">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\CARGAR DIM_EMPLEADO\left join.Inputs[Merge Join Right Input].Columns[empleado_NombreCompleto]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\CARGAR DIM_EMPLEADO\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[dim_empleado]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\CARGAR DIM_EMPLEADO\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-IR5V3MM.datamart_northwind]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-IR5V3MM.datamart_northwind]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\CARGAR DIM_EMPLEADO\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[empleadoid]"
+                      cachedDataType="i4"
+                      cachedName="empleadoid"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\CARGAR DIM_EMPLEADO\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[empleado_codigoBKey]"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\left join.Outputs[Merge Join Output].Columns[empleadoid]" />
+                    <inputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[nombre completo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="31"
+                      cachedName="nombre completo"
+                      externalMetadataColumnId="Package\CARGAR DIM_EMPLEADO\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[empleado_NombreCompleto]"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\left join.Outputs[Merge Join Output].Columns[nombre completo]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[empleado_SKey]"
+                      dataType="i4"
+                      name="empleado_SKey" />
+                    <externalMetadataColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[empleado_codigoBKey]"
+                      dataType="i4"
+                      name="empleado_codigoBKey" />
+                    <externalMetadataColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[empleado_NombreCompleto]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="empleado_NombreCompleto" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\CARGAR DIM_EMPLEADO\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\CARGAR DIM_EMPLEADO\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\CARGAR DIM_EMPLEADO\Ordenar Dim_empleado"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Ordenar Dim_empleado"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\CARGAR DIM_EMPLEADO\Ordenar Dim_empleado.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\Ordenar Dim_empleado.Inputs[Sort Input].Columns[empleado_SKey]"
+                      cachedDataType="i4"
+                      cachedName="empleado_SKey"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Output].Columns[empleado_SKey]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\Ordenar Dim_empleado.Inputs[Sort Input].Columns[empleado_codigoBKey]"
+                      cachedDataType="i4"
+                      cachedName="empleado_codigoBKey"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Output].Columns[empleado_codigoBKey]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\Ordenar Dim_empleado.Inputs[Sort Input].Columns[empleado_NombreCompleto]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="empleado_NombreCompleto"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Output].Columns[empleado_NombreCompleto]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\CARGAR DIM_EMPLEADO\Ordenar Dim_empleado.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\Ordenar Dim_empleado.Outputs[Sort Output].Columns[empleado_SKey]"
+                      dataType="i4"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\Ordenar Dim_empleado.Outputs[Sort Output].Columns[empleado_SKey]"
+                      name="empleado_SKey">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Output].Columns[empleado_SKey]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\Ordenar Dim_empleado.Outputs[Sort Output].Columns[empleado_codigoBKey]"
+                      dataType="i4"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\Ordenar Dim_empleado.Outputs[Sort Output].Columns[empleado_codigoBKey]"
+                      name="empleado_codigoBKey"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Output].Columns[empleado_codigoBKey]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\Ordenar Dim_empleado.Outputs[Sort Output].Columns[empleado_NombreCompleto]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\Ordenar Dim_empleado.Outputs[Sort Output].Columns[empleado_NombreCompleto]"
+                      name="empleado_NombreCompleto">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Output].Columns[empleado_NombreCompleto]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\CARGAR DIM_EMPLEADO\Ordenar Stage_empleadp"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Ordenar Stage_empleadp"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\CARGAR DIM_EMPLEADO\Ordenar Stage_empleadp.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\Ordenar Stage_empleadp.Inputs[Sort Input].Columns[empleadoid]"
+                      cachedDataType="i4"
+                      cachedName="empleadoid"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\stage_empleado.Outputs[OLE DB Source Output].Columns[empleadoid]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\Ordenar Stage_empleadp.Inputs[Sort Input].Columns[nombre completo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="31"
+                      cachedName="nombre completo"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\stage_empleado.Outputs[OLE DB Source Output].Columns[nombre completo]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\CARGAR DIM_EMPLEADO\Ordenar Stage_empleadp.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\Ordenar Stage_empleadp.Outputs[Sort Output].Columns[empleadoid]"
+                      dataType="i4"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\Ordenar Stage_empleadp.Outputs[Sort Output].Columns[empleadoid]"
+                      name="empleadoid"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\CARGAR DIM_EMPLEADO\stage_empleado.Outputs[OLE DB Source Output].Columns[empleadoid]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\Ordenar Stage_empleadp.Outputs[Sort Output].Columns[nombre completo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="31"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\Ordenar Stage_empleadp.Outputs[Sort Output].Columns[nombre completo]"
+                      name="nombre completo">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\CARGAR DIM_EMPLEADO\stage_empleado.Outputs[OLE DB Source Output].Columns[nombre completo]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\CARGAR DIM_EMPLEADO\stage_empleado"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="stage_empleado"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select se.empleadoid, CONCAT(se.nombre, ' ', se.apellido) as [nombre completo]
+from stage_northwind.dbo.empleado as se</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\CARGAR DIM_EMPLEADO\stage_empleado.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-IR5V3MM.stage_northwind]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-IR5V3MM.stage_northwind]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\CARGAR DIM_EMPLEADO\stage_empleado.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\stage_empleado.Outputs[OLE DB Source Output].Columns[empleadoid]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CARGAR DIM_EMPLEADO\stage_empleado.Outputs[OLE DB Source Output].ExternalColumns[empleadoid]"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\stage_empleado.Outputs[OLE DB Source Output].Columns[empleadoid]"
+                      name="empleadoid"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\stage_empleado.Outputs[OLE DB Source Output].Columns[nombre completo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CARGAR DIM_EMPLEADO\stage_empleado.Outputs[OLE DB Source Output].ExternalColumns[nombre completo]"
+                      length="31"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\stage_empleado.Outputs[OLE DB Source Output].Columns[nombre completo]"
+                      name="nombre completo"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\stage_empleado.Outputs[OLE DB Source Output].ExternalColumns[empleadoid]"
+                      dataType="i4"
+                      name="empleadoid" />
+                    <externalMetadataColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\stage_empleado.Outputs[OLE DB Source Output].ExternalColumns[nombre completo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="31"
+                      name="nombre completo" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\CARGAR DIM_EMPLEADO\stage_empleado.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\stage_empleado.Outputs[OLE DB Source Error Output].Columns[empleadoid]"
+                      dataType="i4"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\stage_empleado.Outputs[OLE DB Source Error Output].Columns[empleadoid]"
+                      name="empleadoid" />
+                    <outputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\stage_empleado.Outputs[OLE DB Source Error Output].Columns[nombre completo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="31"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\stage_empleado.Outputs[OLE DB Source Error Output].Columns[nombre completo]"
+                      name="nombre completo" />
+                    <outputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\stage_empleado.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\stage_empleado.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CARGAR DIM_EMPLEADO\stage_empleado.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CARGAR DIM_EMPLEADO\stage_empleado.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\CARGAR DIM_EMPLEADO.Paths[Empleados_Nuevos]"
+              endId="Package\CARGAR DIM_EMPLEADO\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Empleados_Nuevos"
+              startId="Package\CARGAR DIM_EMPLEADO\Filtrar empleados_Nuevos.Outputs[Empleados_Nuevos]" />
+            <path
+              refId="Package\CARGAR DIM_EMPLEADO.Paths[Merge Join Output]"
+              endId="Package\CARGAR DIM_EMPLEADO\Filtrar empleados_Nuevos.Inputs[Conditional Split Input]"
+              name="Merge Join Output"
+              startId="Package\CARGAR DIM_EMPLEADO\left join.Outputs[Merge Join Output]" />
+            <path
+              refId="Package\CARGAR DIM_EMPLEADO.Paths[OLE DB Source Output]"
+              endId="Package\CARGAR DIM_EMPLEADO\Ordenar Stage_empleadp.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\CARGAR DIM_EMPLEADO\stage_empleado.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\CARGAR DIM_EMPLEADO.Paths[OLE DB Source Output1]"
+              endId="Package\CARGAR DIM_EMPLEADO\Ordenar Dim_empleado.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\CARGAR DIM_EMPLEADO\Dim_empleado.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\CARGAR DIM_EMPLEADO.Paths[Sort Output]"
+              endId="Package\CARGAR DIM_EMPLEADO\left join.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\CARGAR DIM_EMPLEADO\Ordenar Stage_empleadp.Outputs[Sort Output]" />
+            <path
+              refId="Package\CARGAR DIM_EMPLEADO.Paths[Sort Output1]"
+              endId="Package\CARGAR DIM_EMPLEADO\left join.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\CARGAR DIM_EMPLEADO\Ordenar Dim_empleado.Outputs[Sort Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="213.333333333334,42.6666666666667"
+          Id="Package\CARGAR DIM_EMPLEADO"
+          TopLeft="5.5,5.5" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\CARGAR DIM_EMPLEADO">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="202.666666666667,42.6666666666667"
+          Id="Package\CARGAR DIM_EMPLEADO\Ordenar Stage_empleadp"
+          TopLeft="7.37500259838994,102.447368015378" />
+        <NodeLayout
+          Size="158.666666666667,42.6666666666667"
+          Id="Package\CARGAR DIM_EMPLEADO\stage_empleado"
+          TopLeft="25.4999991059303,18.4999998572626" />
+        <NodeLayout
+          Size="193.333333333334,42.6666666666667"
+          Id="Package\CARGAR DIM_EMPLEADO\Ordenar Dim_empleado"
+          TopLeft="510.499981448055,100.289473631623" />
+        <NodeLayout
+          Size="204,42.6666666666667"
+          Id="Package\CARGAR DIM_EMPLEADO\Filtrar empleados_Nuevos"
+          TopLeft="272.374994775281,267.71052508374" />
+        <NodeLayout
+          Size="174.666666666667,42.6666666666667"
+          Id="Package\CARGAR DIM_EMPLEADO\OLE DB Destination"
+          TopLeft="282.999987594783,344.868417326433" />
+        <NodeLayout
+          Size="113.333333333334,42.6666666666667"
+          Id="Package\CARGAR DIM_EMPLEADO\left join"
+          TopLeft="316.124991478399,194.605262399133" />
+        <NodeLayout
+          Size="152,42.6666666666667"
+          Id="Package\CARGAR DIM_EMPLEADO\Dim_empleado"
+          TopLeft="534.874977676199,24.5526316991473" />
+        <EdgeLayout
+          Id="Package\CARGAR DIM_EMPLEADO.Paths[Empleados_Nuevos]"
+          TopLeft="372.354157851699,310.377191750407">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,34.4912255760264"
+              Start="0,0"
+              End="0,26.9912255760264">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.9912255760264" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-43.337578125,7.6909252880132,86.67515625,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CARGAR DIM_EMPLEADO.Paths[Sort Output1]"
+          TopLeft="607.166648114721,142.95614029829">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-216.8194344141,51.6491221008429"
+              Start="0,0"
+              End="-216.8194344141,44.1491221008429">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.558065280081" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.558065280081"
+                    Point2="0,30.558065280081"
+                    Point3="-4,30.558065280081" />
+                  <mssgle:LineSegment
+                    End="-212.8194344141,30.558065280081" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-212.8194344141,30.558065280081"
+                    Point2="-216.8194344141,30.558065280081"
+                    Point3="-216.8194344141,34.558065280081" />
+                  <mssgle:LineSegment
+                    End="-216.8194344141,44.1491221008429" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CARGAR DIM_EMPLEADO.Paths[Sort Output]"
+          TopLeft="108.708335931723,145.114034682044">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="246.527766657787,49.4912277170882"
+              Start="0,0"
+              End="246.527766657787,41.9912277170882">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.2813528256554" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25.2813528256554"
+                    Point2="0,29.2813528256554"
+                    Point3="4,29.2813528256554" />
+                  <mssgle:LineSegment
+                    End="242.527766657787,29.2813528256554" />
+                  <mssgle:CubicBezierSegment
+                    Point1="242.527766657787,29.2813528256554"
+                    Point2="246.527766657787,29.2813528256554"
+                    Point3="246.527766657787,33.2813528256554" />
+                  <mssgle:LineSegment
+                    End="246.527766657787,41.9912277170882" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CARGAR DIM_EMPLEADO.Paths[OLE DB Source Output1]"
+          TopLeft="609.02081289546,67.219298365814">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,33.070175265809"
+              Start="0,0"
+              End="0,25.570175265809">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.570175265809" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CARGAR DIM_EMPLEADO.Paths[OLE DB Source Output]"
+          TopLeft="106.770834185493,61.1666665239293">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,41.2807014914487"
+              Start="0,0"
+              End="0,33.7807014914487">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.7807014914487" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CARGAR DIM_EMPLEADO.Paths[Merge Join Output]"
+          TopLeft="373.583326460173,237.2719290658">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,30.4385960179403"
+              Start="0,0"
+              End="0,22.9385960179403">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.9385960179403" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\CARGAR DIM_EMPLEADO\stage_empleado">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CARGAR DIM_EMPLEADO\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CARGAR DIM_EMPLEADO\Dim_empleado">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

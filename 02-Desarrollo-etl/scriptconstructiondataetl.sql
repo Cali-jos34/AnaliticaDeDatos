@@ -9,7 +9,7 @@ use stage_northwind
 
 create table categorias(
 	categoriaid int not null,
-	nombrecategoria varchar(15)
+	nombrecategoria varchar(15) 
 );
 
 create table clientes(
