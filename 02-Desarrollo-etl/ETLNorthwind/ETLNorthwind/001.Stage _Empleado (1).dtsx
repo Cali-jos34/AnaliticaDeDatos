@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="001 Stage _Empleado"
   DTS:PackageType="5"
-  DTS:VersionBuild="24"
-  DTS:VersionGUID="{F52A36F9-D2EC-4339-B8C1-984EFC1C7ADF}">
+  DTS:VersionBuild="28"
+  DTS:VersionGUID="{EC9D0B26-74B7-454F-9DBE-8FC97489ADB8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1228,14 +1228,6 @@ FROM Northwind.dbo.Employees;</property>
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\CARGA _STAGE_EMPLEADO\STAGE_EMPLEADO.Inputs[OLE DB Destination Input].Columns[FirstName_VARCAHR]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="100"
-                      cachedName="FirstName_VARCAHR"
-                      externalMetadataColumnId="Package\CARGA _STAGE_EMPLEADO\STAGE_EMPLEADO.Inputs[OLE DB Destination Input].ExternalColumns[nombre]"
-                      lineageId="Package\CARGA _STAGE_EMPLEADO\JOIN EMPLOYEE_EMPLEADO.Outputs[Merge Join Output].Columns[FirstName_VARCAHR]" />
-                    <inputColumn
                       refId="Package\CARGA _STAGE_EMPLEADO\STAGE_EMPLEADO.Inputs[OLE DB Destination Input].Columns[LastName_VARCHAR]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -1250,6 +1242,14 @@ FROM Northwind.dbo.Employees;</property>
                       cachedSortKeyPosition="1"
                       externalMetadataColumnId="Package\CARGA _STAGE_EMPLEADO\STAGE_EMPLEADO.Inputs[OLE DB Destination Input].ExternalColumns[empleadoid]"
                       lineageId="Package\CARGA _STAGE_EMPLEADO\JOIN EMPLOYEE_EMPLEADO.Outputs[Merge Join Output].Columns[EmployeeID]" />
+                    <inputColumn
+                      refId="Package\CARGA _STAGE_EMPLEADO\STAGE_EMPLEADO.Inputs[OLE DB Destination Input].Columns[FirstName_VARCAHR]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="FirstName_VARCAHR"
+                      externalMetadataColumnId="Package\CARGA _STAGE_EMPLEADO\STAGE_EMPLEADO.Inputs[OLE DB Destination Input].ExternalColumns[nombre]"
+                      lineageId="Package\CARGA _STAGE_EMPLEADO\JOIN EMPLOYEE_EMPLEADO.Outputs[Merge Join Output].Columns[FirstName_VARCAHR]" />
                     <inputColumn
                       refId="Package\CARGA _STAGE_EMPLEADO\STAGE_EMPLEADO.Inputs[OLE DB Destination Input].Columns[HireDate]"
                       cachedDataType="dbTimeStamp"
@@ -1400,7 +1400,7 @@ FROM Northwind.dbo.Employees;</property>
         <NodeLayout
           Size="197.333333333334,42.6666666666667"
           Id="Package\CARGA _STAGE_EMPLEADO\ORDENAR_EMPLOYEE"
-          TopLeft="45.3869108647286,102.631577820494" />
+          TopLeft="45.3869108647286,103.999998858101" />
         <NodeLayout
           Size="157.333333333334,42.6666666666667"
           Id="Package\CARGA _STAGE_EMPLEADO\Conditional Split"
@@ -1441,18 +1441,18 @@ FROM Northwind.dbo.Employees;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\CARGA _STAGE_EMPLEADO.Paths[Sort Output]"
-          TopLeft="142.83928737337,145.298244487161">
+          TopLeft="142.83928737337,146.666665524767">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,28.4912272888757"
+              EndConnector="0,27.1228062512687"
               Start="0,0"
-              End="0,20.9912272888757">
+              End="0,19.6228062512687">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.9912272888757" />
+                    End="0,19.6228062512687" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1497,30 +1497,30 @@ FROM Northwind.dbo.Employees;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\CARGA _STAGE_EMPLEADO.Paths[OLE DB Source Output]"
-          TopLeft="122.803570945614,54.3959898461519">
+          TopLeft="122.803570945614,54.3959898461516">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="21.2500065857809,48.2355879743423"
+              EndConnector="21.2500065857813,49.604009011949"
               Start="0,0"
-              End="21.2500065857809,40.7355879743423">
+              End="21.2500065857813,42.104009011949">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.1177939871711" />
+                    End="0,20.8020045059745" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.1177939871711"
-                    Point2="0,24.1177939871711"
-                    Point3="4,24.1177939871711" />
+                    Point1="0,20.8020045059745"
+                    Point2="0,24.8020045059745"
+                    Point3="4,24.8020045059745" />
                   <mssgle:LineSegment
-                    End="17.2500065857809,24.1177939871711" />
+                    End="17.2500065857813,24.8020045059745" />
                   <mssgle:CubicBezierSegment
-                    Point1="17.2500065857809,24.1177939871711"
-                    Point2="21.2500065857809,24.1177939871711"
-                    Point3="21.2500065857809,28.1177939871711" />
+                    Point1="17.2500065857813,24.8020045059745"
+                    Point2="21.2500065857813,24.8020045059745"
+                    Point3="21.2500065857813,28.8020045059745" />
                   <mssgle:LineSegment
-                    End="21.2500065857809,40.7355879743423" />
+                    End="21.2500065857813,42.104009011949" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

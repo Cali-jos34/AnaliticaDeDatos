@@ -3,40 +3,8 @@
   "WorkspaceRootPath": "C:\\AnaliticaDeDatos\\02-Desarrollo-etl\\ETLNorthwind\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37AAA9EC-7CD0-3077-0152-227FBE1DC51E}|Datamart_Northwind\\Datamart_Northwind.dtproj|C:\\AnaliticaDeDatos\\02-Desarrollo-etl\\ETLNorthwind\\Datamart_Northwind\\Carga_Master.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
-      "RelativeMoniker": "D:0:0:{37AAA9EC-7CD0-3077-0152-227FBE1DC51E}|Datamart_Northwind\\Datamart_Northwind.dtproj|solutionrelative:Datamart_Northwind\\Carga_Master.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD277D0D-AD44-7F7D-D3B9-70C0CBEA6CE9}|ETLNorthwind\\Stage_Northwind.dtproj|C:\\AnaliticaDeDatos\\02-Desarrollo-etl\\ETLNorthwind\\ETLNorthwind\\07-Stage_Tiempo.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
-      "RelativeMoniker": "D:0:0:{DD277D0D-AD44-7F7D-D3B9-70C0CBEA6CE9}|ETLNorthwind\\Stage_Northwind.dtproj|solutionrelative:ETLNorthwind\\07-Stage_Tiempo.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD277D0D-AD44-7F7D-D3B9-70C0CBEA6CE9}|ETLNorthwind\\Stage_Northwind.dtproj|C:\\AnaliticaDeDatos\\02-Desarrollo-etl\\ETLNorthwind\\ETLNorthwind\\04-Stage_Ventas.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
-      "RelativeMoniker": "D:0:0:{DD277D0D-AD44-7F7D-D3B9-70C0CBEA6CE9}|ETLNorthwind\\Stage_Northwind.dtproj|solutionrelative:ETLNorthwind\\04-Stage_Ventas.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD277D0D-AD44-7F7D-D3B9-70C0CBEA6CE9}|ETLNorthwind\\Stage_Northwind.dtproj|C:\\AnaliticaDeDatos\\02-Desarrollo-etl\\ETLNorthwind\\ETLNorthwind\\03-Stage_Cliente.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
-      "RelativeMoniker": "D:0:0:{DD277D0D-AD44-7F7D-D3B9-70C0CBEA6CE9}|ETLNorthwind\\Stage_Northwind.dtproj|solutionrelative:ETLNorthwind\\03-Stage_Cliente.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD277D0D-AD44-7F7D-D3B9-70C0CBEA6CE9}|ETLNorthwind\\Stage_Northwind.dtproj|C:\\AnaliticaDeDatos\\02-Desarrollo-etl\\ETLNorthwind\\ETLNorthwind\\06-Stage_Proveedor.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
-      "RelativeMoniker": "D:0:0:{DD277D0D-AD44-7F7D-D3B9-70C0CBEA6CE9}|ETLNorthwind\\Stage_Northwind.dtproj|solutionrelative:ETLNorthwind\\06-Stage_Proveedor.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DD277D0D-AD44-7F7D-D3B9-70C0CBEA6CE9}|ETLNorthwind\\Stage_Northwind.dtproj|C:\\AnaliticaDeDatos\\02-Desarrollo-etl\\ETLNorthwind\\ETLNorthwind\\001.Stage _Empleado (1).dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
       "RelativeMoniker": "D:0:0:{DD277D0D-AD44-7F7D-D3B9-70C0CBEA6CE9}|ETLNorthwind\\Stage_Northwind.dtproj|solutionrelative:ETLNorthwind\\001.Stage _Empleado (1).dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD277D0D-AD44-7F7D-D3B9-70C0CBEA6CE9}|ETLNorthwind\\Stage_Northwind.dtproj|C:\\AnaliticaDeDatos\\02-Desarrollo-etl\\ETLNorthwind\\ETLNorthwind\\05-Stage_Productos.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
-      "RelativeMoniker": "D:0:0:{DD277D0D-AD44-7F7D-D3B9-70C0CBEA6CE9}|ETLNorthwind\\Stage_Northwind.dtproj|solutionrelative:ETLNorthwind\\05-Stage_Productos.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD277D0D-AD44-7F7D-D3B9-70C0CBEA6CE9}|ETLNorthwind\\Stage_Northwind.dtproj|C:\\AnaliticaDeDatos\\02-Desarrollo-etl\\ETLNorthwind\\ETLNorthwind\\02-Stage_Categoria.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
-      "RelativeMoniker": "D:0:0:{DD277D0D-AD44-7F7D-D3B9-70C0CBEA6CE9}|ETLNorthwind\\Stage_Northwind.dtproj|solutionrelative:ETLNorthwind\\02-Stage_Categoria.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD277D0D-AD44-7F7D-D3B9-70C0CBEA6CE9}|ETLNorthwind\\Stage_Northwind.dtproj|C:\\AnaliticaDeDatos\\02-Desarrollo-etl\\ETLNorthwind\\ETLNorthwind\\CargaMaster.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
-      "RelativeMoniker": "D:0:0:{DD277D0D-AD44-7F7D-D3B9-70C0CBEA6CE9}|ETLNorthwind\\Stage_Northwind.dtproj|solutionrelative:ETLNorthwind\\CargaMaster.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
     }
   ],
   "DocumentGroupContainers": [
@@ -55,109 +23,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Carga_Master.dtsx [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\AnaliticaDeDatos\\02-Desarrollo-etl\\ETLNorthwind\\Datamart_Northwind\\Carga_Master.dtsx",
-              "RelativeDocumentMoniker": "Datamart_Northwind\\Carga_Master.dtsx",
-              "ToolTip": "C:\\AnaliticaDeDatos\\02-Desarrollo-etl\\ETLNorthwind\\Datamart_Northwind\\Carga_Master.dtsx [Dise\u00F1o]",
-              "RelativeToolTip": "Datamart_Northwind\\Carga_Master.dtsx [Dise\u00F1o]",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPaSURBVEhLtVVdaBRXFP5mdnbWZNvp\u002Bpc0iUmrSMQHnyoNrYpPVijEWFS0PvkkKCgKIYjYhxZEoZT6Uh9a\u002Bta\u002B2gYflLZECqUBi7UtIhVRNLSC68bdzWbdmb13Zjzn3ruTWe3WvPixh/s75\u002Bc759zFS0Ucx5aZ4tjJM5M7x8ZGoyiClhgypDEEZBwhDEMSGuksDGPM/PMAN2/e\u002BGTy2y8\u002Br1VKVaOmM46eOD1JihVIUSRJuxBh1GyGkd\u002BUUSOQ0RNfRvMNEdWeiOizr76PLlz\u002BpbZtz\u002BGPnaybNWqeg21G5V0LFsVl2xYyGQuOY8F1bOSyNpa4NrpzGXSRkAsYHOjPj4yMfPTu6MFxy85kzOdtSAzEFPpiEMeKWqIvxuWpadTrPq9PD7/13ri50obEgFyEAVZOqSHvgQ\u002B2b6IIXWSzOaxft46Pt6lLzyAxQMSbGdAIQsw3ZCJ1X4L0oh5IEP\u002Bo1gUKhWU4sG8U44f2Y/fOHfrD/4BjRlU17CHz/82VGdyac80JsMKqY2L3ML68dA8PRJfZBVZlfXy4dUhVWicsJJniZm5biJb2JsLuh8wN/dL7fJtzwWXcCakqojrveC9Wtb9gXqOVbCkXYYDKXyWvBXuulAgr1hHEbft8wPv/R1GSA\u002B4DSZdzsLBr0wD8JhkkhZwbxB6dA2PvDCAQupPZc8vKQ/C8cwDpHPBToGko5LPoKbhY6eWw3FuCwis59Wx43Vks7XbxWt6lOy66XUcZ4vx1QqpMdQScr99ul/HDtSJ\u002BvF7E1B9F/Pr3rPKSuRakjJWy5/RTTrF0QlsVCcm0xvjzbhU/zXqYeuzhStnD72QwpDNJNHEhMF0xiZTsvTbSCakkhxSF9oZph0N9YISX9O6RMs0956s45yt5WPUx74co9Ax6fas3jLAg1zuslBJSFPHHTBOv2j3i9mBPVUmy0PznGw8RBD6E8NHf52Fi4tTGc19fnD57/rtprNr1qfk0ZYDffKVId7Tz7\u002B1EGNo4VxXNSdiFDW\u002B\u002BirW9XXg9Ty\u002BsTed\u002BgHszFXW/hYUcELFKCXG7Z/Mgju9YiyPvr8Gh7Wuwd8uQ2peUB8G8czhkQVDJVmoBZkkeVXyUSB5VGkajRluSVRKVEZ0LpdR4viC8pyMIqCrKtSYeVwNlqDynxzTachBy6ysP2VsaSSHvcadyw6kCoH02ymhSBLOkvMzK2RAJv7RpJJ0spMDVa3\u002BhWCqbN193sepmZdzs8ZovFN5Abb6JUtknxdp7HmvPGEj\u002B9Ff0DW2J4AyY5Qux/O0T5/pX9vYw74EIVTSCG5GkdP/qRdw5P2auvkwATwH5qMc\u002BQnI//gAAAABJRU5ErkJggg==",
-              "WhenOpened": "2025-06-09T23:17:16.761Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "07-Stage_Tiempo.dtsx [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\AnaliticaDeDatos\\02-Desarrollo-etl\\ETLNorthwind\\ETLNorthwind\\07-Stage_Tiempo.dtsx",
-              "RelativeDocumentMoniker": "ETLNorthwind\\07-Stage_Tiempo.dtsx",
-              "ToolTip": "C:\\AnaliticaDeDatos\\02-Desarrollo-etl\\ETLNorthwind\\ETLNorthwind\\07-Stage_Tiempo.dtsx [Dise\u00F1o]",
-              "RelativeToolTip": "ETLNorthwind\\07-Stage_Tiempo.dtsx [Dise\u00F1o]",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPaSURBVEhLtVVdaBRXFP5mdnbWZNvp\u002Bpc0iUmrSMQHnyoNrYpPVijEWFS0PvkkKCgKIYjYhxZEoZT6Uh9a\u002Bta\u002B2gYflLZECqUBi7UtIhVRNLSC68bdzWbdmb13Zjzn3ruTWe3WvPixh/s75\u002Bc759zFS0Ucx5aZ4tjJM5M7x8ZGoyiClhgypDEEZBwhDEMSGuksDGPM/PMAN2/e\u002BGTy2y8\u002Br1VKVaOmM46eOD1JihVIUSRJuxBh1GyGkd\u002BUUSOQ0RNfRvMNEdWeiOizr76PLlz\u002BpbZtz\u002BGPnaybNWqeg21G5V0LFsVl2xYyGQuOY8F1bOSyNpa4NrpzGXSRkAsYHOjPj4yMfPTu6MFxy85kzOdtSAzEFPpiEMeKWqIvxuWpadTrPq9PD7/13ri50obEgFyEAVZOqSHvgQ\u002B2b6IIXWSzOaxft46Pt6lLzyAxQMSbGdAIQsw3ZCJ1X4L0oh5IEP\u002Bo1gUKhWU4sG8U44f2Y/fOHfrD/4BjRlU17CHz/82VGdyac80JsMKqY2L3ML68dA8PRJfZBVZlfXy4dUhVWicsJJniZm5biJb2JsLuh8wN/dL7fJtzwWXcCakqojrveC9Wtb9gXqOVbCkXYYDKXyWvBXuulAgr1hHEbft8wPv/R1GSA\u002B4DSZdzsLBr0wD8JhkkhZwbxB6dA2PvDCAQupPZc8vKQ/C8cwDpHPBToGko5LPoKbhY6eWw3FuCwis59Wx43Vks7XbxWt6lOy66XUcZ4vx1QqpMdQScr99ul/HDtSJ\u002BvF7E1B9F/Pr3rPKSuRakjJWy5/RTTrF0QlsVCcm0xvjzbhU/zXqYeuzhStnD72QwpDNJNHEhMF0xiZTsvTbSCakkhxSF9oZph0N9YISX9O6RMs0956s45yt5WPUx74co9Ax6fas3jLAg1zuslBJSFPHHTBOv2j3i9mBPVUmy0PznGw8RBD6E8NHf52Fi4tTGc19fnD57/rtprNr1qfk0ZYDffKVId7Tz7\u002B1EGNo4VxXNSdiFDW\u002B\u002BirW9XXg9Ty\u002BsTed\u002BgHszFXW/hYUcELFKCXG7Z/Mgju9YiyPvr8Gh7Wuwd8uQ2peUB8G8czhkQVDJVmoBZkkeVXyUSB5VGkajRluSVRKVEZ0LpdR4viC8pyMIqCrKtSYeVwNlqDynxzTachBy6ysP2VsaSSHvcadyw6kCoH02ymhSBLOkvMzK2RAJv7RpJJ0spMDVa3\u002BhWCqbN193sepmZdzs8ZovFN5Abb6JUtknxdp7HmvPGEj\u002B9Ff0DW2J4AyY5Qux/O0T5/pX9vYw74EIVTSCG5GkdP/qRdw5P2auvkwATwH5qMc\u002BQnI//gAAAABJRU5ErkJggg==",
-              "WhenOpened": "2025-06-09T23:16:31.846Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "04-Stage_Ventas.dtsx [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\AnaliticaDeDatos\\02-Desarrollo-etl\\ETLNorthwind\\ETLNorthwind\\04-Stage_Ventas.dtsx",
-              "RelativeDocumentMoniker": "ETLNorthwind\\04-Stage_Ventas.dtsx",
-              "ToolTip": "C:\\AnaliticaDeDatos\\02-Desarrollo-etl\\ETLNorthwind\\ETLNorthwind\\04-Stage_Ventas.dtsx [Dise\u00F1o]",
-              "RelativeToolTip": "ETLNorthwind\\04-Stage_Ventas.dtsx [Dise\u00F1o]",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPaSURBVEhLtVVdaBRXFP5mdnbWZNvp\u002Bpc0iUmrSMQHnyoNrYpPVijEWFS0PvkkKCgKIYjYhxZEoZT6Uh9a\u002Bta\u002B2gYflLZECqUBi7UtIhVRNLSC68bdzWbdmb13Zjzn3ruTWe3WvPixh/s75\u002Bc759zFS0Ucx5aZ4tjJM5M7x8ZGoyiClhgypDEEZBwhDEMSGuksDGPM/PMAN2/e\u002BGTy2y8\u002Br1VKVaOmM46eOD1JihVIUSRJuxBh1GyGkd\u002BUUSOQ0RNfRvMNEdWeiOizr76PLlz\u002BpbZtz\u002BGPnaybNWqeg21G5V0LFsVl2xYyGQuOY8F1bOSyNpa4NrpzGXSRkAsYHOjPj4yMfPTu6MFxy85kzOdtSAzEFPpiEMeKWqIvxuWpadTrPq9PD7/13ri50obEgFyEAVZOqSHvgQ\u002B2b6IIXWSzOaxft46Pt6lLzyAxQMSbGdAIQsw3ZCJ1X4L0oh5IEP\u002Bo1gUKhWU4sG8U44f2Y/fOHfrD/4BjRlU17CHz/82VGdyac80JsMKqY2L3ML68dA8PRJfZBVZlfXy4dUhVWicsJJniZm5biJb2JsLuh8wN/dL7fJtzwWXcCakqojrveC9Wtb9gXqOVbCkXYYDKXyWvBXuulAgr1hHEbft8wPv/R1GSA\u002B4DSZdzsLBr0wD8JhkkhZwbxB6dA2PvDCAQupPZc8vKQ/C8cwDpHPBToGko5LPoKbhY6eWw3FuCwis59Wx43Vks7XbxWt6lOy66XUcZ4vx1QqpMdQScr99ul/HDtSJ\u002BvF7E1B9F/Pr3rPKSuRakjJWy5/RTTrF0QlsVCcm0xvjzbhU/zXqYeuzhStnD72QwpDNJNHEhMF0xiZTsvTbSCakkhxSF9oZph0N9YISX9O6RMs0956s45yt5WPUx74co9Ax6fas3jLAg1zuslBJSFPHHTBOv2j3i9mBPVUmy0PznGw8RBD6E8NHf52Fi4tTGc19fnD57/rtprNr1qfk0ZYDffKVId7Tz7\u002B1EGNo4VxXNSdiFDW\u002B\u002BirW9XXg9Ty\u002BsTed\u002BgHszFXW/hYUcELFKCXG7Z/Mgju9YiyPvr8Gh7Wuwd8uQ2peUB8G8czhkQVDJVmoBZkkeVXyUSB5VGkajRluSVRKVEZ0LpdR4viC8pyMIqCrKtSYeVwNlqDynxzTachBy6ysP2VsaSSHvcadyw6kCoH02ymhSBLOkvMzK2RAJv7RpJJ0spMDVa3\u002BhWCqbN193sepmZdzs8ZovFN5Abb6JUtknxdp7HmvPGEj\u002B9Ff0DW2J4AyY5Qux/O0T5/pX9vYw74EIVTSCG5GkdP/qRdw5P2auvkwATwH5qMc\u002BQnI//gAAAABJRU5ErkJggg==",
-              "WhenOpened": "2025-06-09T23:16:26.144Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "03-Stage_Cliente.dtsx [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\AnaliticaDeDatos\\02-Desarrollo-etl\\ETLNorthwind\\ETLNorthwind\\03-Stage_Cliente.dtsx",
-              "RelativeDocumentMoniker": "ETLNorthwind\\03-Stage_Cliente.dtsx",
-              "ToolTip": "C:\\AnaliticaDeDatos\\02-Desarrollo-etl\\ETLNorthwind\\ETLNorthwind\\03-Stage_Cliente.dtsx [Dise\u00F1o]",
-              "RelativeToolTip": "ETLNorthwind\\03-Stage_Cliente.dtsx [Dise\u00F1o]",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPaSURBVEhLtVVdaBRXFP5mdnbWZNvp\u002Bpc0iUmrSMQHnyoNrYpPVijEWFS0PvkkKCgKIYjYhxZEoZT6Uh9a\u002Bta\u002B2gYflLZECqUBi7UtIhVRNLSC68bdzWbdmb13Zjzn3ruTWe3WvPixh/s75\u002Bc759zFS0Ucx5aZ4tjJM5M7x8ZGoyiClhgypDEEZBwhDEMSGuksDGPM/PMAN2/e\u002BGTy2y8\u002Br1VKVaOmM46eOD1JihVIUSRJuxBh1GyGkd\u002BUUSOQ0RNfRvMNEdWeiOizr76PLlz\u002BpbZtz\u002BGPnaybNWqeg21G5V0LFsVl2xYyGQuOY8F1bOSyNpa4NrpzGXSRkAsYHOjPj4yMfPTu6MFxy85kzOdtSAzEFPpiEMeKWqIvxuWpadTrPq9PD7/13ri50obEgFyEAVZOqSHvgQ\u002B2b6IIXWSzOaxft46Pt6lLzyAxQMSbGdAIQsw3ZCJ1X4L0oh5IEP\u002Bo1gUKhWU4sG8U44f2Y/fOHfrD/4BjRlU17CHz/82VGdyac80JsMKqY2L3ML68dA8PRJfZBVZlfXy4dUhVWicsJJniZm5biJb2JsLuh8wN/dL7fJtzwWXcCakqojrveC9Wtb9gXqOVbCkXYYDKXyWvBXuulAgr1hHEbft8wPv/R1GSA\u002B4DSZdzsLBr0wD8JhkkhZwbxB6dA2PvDCAQupPZc8vKQ/C8cwDpHPBToGko5LPoKbhY6eWw3FuCwis59Wx43Vks7XbxWt6lOy66XUcZ4vx1QqpMdQScr99ul/HDtSJ\u002BvF7E1B9F/Pr3rPKSuRakjJWy5/RTTrF0QlsVCcm0xvjzbhU/zXqYeuzhStnD72QwpDNJNHEhMF0xiZTsvTbSCakkhxSF9oZph0N9YISX9O6RMs0956s45yt5WPUx74co9Ax6fas3jLAg1zuslBJSFPHHTBOv2j3i9mBPVUmy0PznGw8RBD6E8NHf52Fi4tTGc19fnD57/rtprNr1qfk0ZYDffKVId7Tz7\u002B1EGNo4VxXNSdiFDW\u002B\u002BirW9XXg9Ty\u002BsTed\u002BgHszFXW/hYUcELFKCXG7Z/Mgju9YiyPvr8Gh7Wuwd8uQ2peUB8G8czhkQVDJVmoBZkkeVXyUSB5VGkajRluSVRKVEZ0LpdR4viC8pyMIqCrKtSYeVwNlqDynxzTachBy6ysP2VsaSSHvcadyw6kCoH02ymhSBLOkvMzK2RAJv7RpJJ0spMDVa3\u002BhWCqbN193sepmZdzs8ZovFN5Abb6JUtknxdp7HmvPGEj\u002B9Ff0DW2J4AyY5Qux/O0T5/pX9vYw74EIVTSCG5GkdP/qRdw5P2auvkwATwH5qMc\u002BQnI//gAAAABJRU5ErkJggg==",
-              "WhenOpened": "2025-06-09T23:16:22.522Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "06-Stage_Proveedor.dtsx [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\AnaliticaDeDatos\\02-Desarrollo-etl\\ETLNorthwind\\ETLNorthwind\\06-Stage_Proveedor.dtsx",
-              "RelativeDocumentMoniker": "ETLNorthwind\\06-Stage_Proveedor.dtsx",
-              "ToolTip": "C:\\AnaliticaDeDatos\\02-Desarrollo-etl\\ETLNorthwind\\ETLNorthwind\\06-Stage_Proveedor.dtsx [Dise\u00F1o]",
-              "RelativeToolTip": "ETLNorthwind\\06-Stage_Proveedor.dtsx [Dise\u00F1o]",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPaSURBVEhLtVVdaBRXFP5mdnbWZNvp\u002Bpc0iUmrSMQHnyoNrYpPVijEWFS0PvkkKCgKIYjYhxZEoZT6Uh9a\u002Bta\u002B2gYflLZECqUBi7UtIhVRNLSC68bdzWbdmb13Zjzn3ruTWe3WvPixh/s75\u002Bc759zFS0Ucx5aZ4tjJM5M7x8ZGoyiClhgypDEEZBwhDEMSGuksDGPM/PMAN2/e\u002BGTy2y8\u002Br1VKVaOmM46eOD1JihVIUSRJuxBh1GyGkd\u002BUUSOQ0RNfRvMNEdWeiOizr76PLlz\u002BpbZtz\u002BGPnaybNWqeg21G5V0LFsVl2xYyGQuOY8F1bOSyNpa4NrpzGXSRkAsYHOjPj4yMfPTu6MFxy85kzOdtSAzEFPpiEMeKWqIvxuWpadTrPq9PD7/13ri50obEgFyEAVZOqSHvgQ\u002B2b6IIXWSzOaxft46Pt6lLzyAxQMSbGdAIQsw3ZCJ1X4L0oh5IEP\u002Bo1gUKhWU4sG8U44f2Y/fOHfrD/4BjRlU17CHz/82VGdyac80JsMKqY2L3ML68dA8PRJfZBVZlfXy4dUhVWicsJJniZm5biJb2JsLuh8wN/dL7fJtzwWXcCakqojrveC9Wtb9gXqOVbCkXYYDKXyWvBXuulAgr1hHEbft8wPv/R1GSA\u002B4DSZdzsLBr0wD8JhkkhZwbxB6dA2PvDCAQupPZc8vKQ/C8cwDpHPBToGko5LPoKbhY6eWw3FuCwis59Wx43Vks7XbxWt6lOy66XUcZ4vx1QqpMdQScr99ul/HDtSJ\u002BvF7E1B9F/Pr3rPKSuRakjJWy5/RTTrF0QlsVCcm0xvjzbhU/zXqYeuzhStnD72QwpDNJNHEhMF0xiZTsvTbSCakkhxSF9oZph0N9YISX9O6RMs0956s45yt5WPUx74co9Ax6fas3jLAg1zuslBJSFPHHTBOv2j3i9mBPVUmy0PznGw8RBD6E8NHf52Fi4tTGc19fnD57/rtprNr1qfk0ZYDffKVId7Tz7\u002B1EGNo4VxXNSdiFDW\u002B\u002BirW9XXg9Ty\u002BsTed\u002BgHszFXW/hYUcELFKCXG7Z/Mgju9YiyPvr8Gh7Wuwd8uQ2peUB8G8czhkQVDJVmoBZkkeVXyUSB5VGkajRluSVRKVEZ0LpdR4viC8pyMIqCrKtSYeVwNlqDynxzTachBy6ysP2VsaSSHvcadyw6kCoH02ymhSBLOkvMzK2RAJv7RpJJ0spMDVa3\u002BhWCqbN193sepmZdzs8ZovFN5Abb6JUtknxdp7HmvPGEj\u002B9Ff0DW2J4AyY5Qux/O0T5/pX9vYw74EIVTSCG5GkdP/qRdw5P2auvkwATwH5qMc\u002BQnI//gAAAABJRU5ErkJggg==",
-              "WhenOpened": "2025-06-09T23:16:18.186Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "001.Stage _Empleado (1).dtsx [Dise\u00F1o]",
               "DocumentMoniker": "C:\\AnaliticaDeDatos\\02-Desarrollo-etl\\ETLNorthwind\\ETLNorthwind\\001.Stage _Empleado (1).dtsx",
               "RelativeDocumentMoniker": "ETLNorthwind\\001.Stage _Empleado (1).dtsx",
               "ToolTip": "C:\\AnaliticaDeDatos\\02-Desarrollo-etl\\ETLNorthwind\\ETLNorthwind\\001.Stage _Empleado (1).dtsx [Dise\u00F1o]",
               "RelativeToolTip": "ETLNorthwind\\001.Stage _Empleado (1).dtsx [Dise\u00F1o]",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPaSURBVEhLtVVdaBRXFP5mdnbWZNvp\u002Bpc0iUmrSMQHnyoNrYpPVijEWFS0PvkkKCgKIYjYhxZEoZT6Uh9a\u002Bta\u002B2gYflLZECqUBi7UtIhVRNLSC68bdzWbdmb13Zjzn3ruTWe3WvPixh/s75\u002Bc759zFS0Ucx5aZ4tjJM5M7x8ZGoyiClhgypDEEZBwhDEMSGuksDGPM/PMAN2/e\u002BGTy2y8\u002Br1VKVaOmM46eOD1JihVIUSRJuxBh1GyGkd\u002BUUSOQ0RNfRvMNEdWeiOizr76PLlz\u002BpbZtz\u002BGPnaybNWqeg21G5V0LFsVl2xYyGQuOY8F1bOSyNpa4NrpzGXSRkAsYHOjPj4yMfPTu6MFxy85kzOdtSAzEFPpiEMeKWqIvxuWpadTrPq9PD7/13ri50obEgFyEAVZOqSHvgQ\u002B2b6IIXWSzOaxft46Pt6lLzyAxQMSbGdAIQsw3ZCJ1X4L0oh5IEP\u002Bo1gUKhWU4sG8U44f2Y/fOHfrD/4BjRlU17CHz/82VGdyac80JsMKqY2L3ML68dA8PRJfZBVZlfXy4dUhVWicsJJniZm5biJb2JsLuh8wN/dL7fJtzwWXcCakqojrveC9Wtb9gXqOVbCkXYYDKXyWvBXuulAgr1hHEbft8wPv/R1GSA\u002B4DSZdzsLBr0wD8JhkkhZwbxB6dA2PvDCAQupPZc8vKQ/C8cwDpHPBToGko5LPoKbhY6eWw3FuCwis59Wx43Vks7XbxWt6lOy66XUcZ4vx1QqpMdQScr99ul/HDtSJ\u002BvF7E1B9F/Pr3rPKSuRakjJWy5/RTTrF0QlsVCcm0xvjzbhU/zXqYeuzhStnD72QwpDNJNHEhMF0xiZTsvTbSCakkhxSF9oZph0N9YISX9O6RMs0956s45yt5WPUx74co9Ax6fas3jLAg1zuslBJSFPHHTBOv2j3i9mBPVUmy0PznGw8RBD6E8NHf52Fi4tTGc19fnD57/rtprNr1qfk0ZYDffKVId7Tz7\u002B1EGNo4VxXNSdiFDW\u002B\u002BirW9XXg9Ty\u002BsTed\u002BgHszFXW/hYUcELFKCXG7Z/Mgju9YiyPvr8Gh7Wuwd8uQ2peUB8G8czhkQVDJVmoBZkkeVXyUSB5VGkajRluSVRKVEZ0LpdR4viC8pyMIqCrKtSYeVwNlqDynxzTachBy6ysP2VsaSSHvcadyw6kCoH02ymhSBLOkvMzK2RAJv7RpJJ0spMDVa3\u002BhWCqbN193sepmZdzs8ZovFN5Abb6JUtknxdp7HmvPGEj\u002B9Ff0DW2J4AyY5Qux/O0T5/pX9vYw74EIVTSCG5GkdP/qRdw5P2auvkwATwH5qMc\u002BQnI//gAAAABJRU5ErkJggg==",
-              "WhenOpened": "2025-06-09T23:15:32.315Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "05-Stage_Productos.dtsx [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\AnaliticaDeDatos\\02-Desarrollo-etl\\ETLNorthwind\\ETLNorthwind\\05-Stage_Productos.dtsx",
-              "RelativeDocumentMoniker": "ETLNorthwind\\05-Stage_Productos.dtsx",
-              "ToolTip": "C:\\AnaliticaDeDatos\\02-Desarrollo-etl\\ETLNorthwind\\ETLNorthwind\\05-Stage_Productos.dtsx [Dise\u00F1o]",
-              "RelativeToolTip": "ETLNorthwind\\05-Stage_Productos.dtsx [Dise\u00F1o]",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPaSURBVEhLtVVdaBRXFP5mdnbWZNvp\u002Bpc0iUmrSMQHnyoNrYpPVijEWFS0PvkkKCgKIYjYhxZEoZT6Uh9a\u002Bta\u002B2gYflLZECqUBi7UtIhVRNLSC68bdzWbdmb13Zjzn3ruTWe3WvPixh/s75\u002Bc759zFS0Ucx5aZ4tjJM5M7x8ZGoyiClhgypDEEZBwhDEMSGuksDGPM/PMAN2/e\u002BGTy2y8\u002Br1VKVaOmM46eOD1JihVIUSRJuxBh1GyGkd\u002BUUSOQ0RNfRvMNEdWeiOizr76PLlz\u002BpbZtz\u002BGPnaybNWqeg21G5V0LFsVl2xYyGQuOY8F1bOSyNpa4NrpzGXSRkAsYHOjPj4yMfPTu6MFxy85kzOdtSAzEFPpiEMeKWqIvxuWpadTrPq9PD7/13ri50obEgFyEAVZOqSHvgQ\u002B2b6IIXWSzOaxft46Pt6lLzyAxQMSbGdAIQsw3ZCJ1X4L0oh5IEP\u002Bo1gUKhWU4sG8U44f2Y/fOHfrD/4BjRlU17CHz/82VGdyac80JsMKqY2L3ML68dA8PRJfZBVZlfXy4dUhVWicsJJniZm5biJb2JsLuh8wN/dL7fJtzwWXcCakqojrveC9Wtb9gXqOVbCkXYYDKXyWvBXuulAgr1hHEbft8wPv/R1GSA\u002B4DSZdzsLBr0wD8JhkkhZwbxB6dA2PvDCAQupPZc8vKQ/C8cwDpHPBToGko5LPoKbhY6eWw3FuCwis59Wx43Vks7XbxWt6lOy66XUcZ4vx1QqpMdQScr99ul/HDtSJ\u002BvF7E1B9F/Pr3rPKSuRakjJWy5/RTTrF0QlsVCcm0xvjzbhU/zXqYeuzhStnD72QwpDNJNHEhMF0xiZTsvTbSCakkhxSF9oZph0N9YISX9O6RMs0956s45yt5WPUx74co9Ax6fas3jLAg1zuslBJSFPHHTBOv2j3i9mBPVUmy0PznGw8RBD6E8NHf52Fi4tTGc19fnD57/rtprNr1qfk0ZYDffKVId7Tz7\u002B1EGNo4VxXNSdiFDW\u002B\u002BirW9XXg9Ty\u002BsTed\u002BgHszFXW/hYUcELFKCXG7Z/Mgju9YiyPvr8Gh7Wuwd8uQ2peUB8G8czhkQVDJVmoBZkkeVXyUSB5VGkajRluSVRKVEZ0LpdR4viC8pyMIqCrKtSYeVwNlqDynxzTachBy6ysP2VsaSSHvcadyw6kCoH02ymhSBLOkvMzK2RAJv7RpJJ0spMDVa3\u002BhWCqbN193sepmZdzs8ZovFN5Abb6JUtknxdp7HmvPGEj\u002B9Ff0DW2J4AyY5Qux/O0T5/pX9vYw74EIVTSCG5GkdP/qRdw5P2auvkwATwH5qMc\u002BQnI//gAAAABJRU5ErkJggg==",
-              "WhenOpened": "2025-06-09T23:15:28.668Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "02-Stage_Categoria.dtsx [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\AnaliticaDeDatos\\02-Desarrollo-etl\\ETLNorthwind\\ETLNorthwind\\02-Stage_Categoria.dtsx",
-              "RelativeDocumentMoniker": "ETLNorthwind\\02-Stage_Categoria.dtsx",
-              "ToolTip": "C:\\AnaliticaDeDatos\\02-Desarrollo-etl\\ETLNorthwind\\ETLNorthwind\\02-Stage_Categoria.dtsx [Dise\u00F1o]",
-              "RelativeToolTip": "ETLNorthwind\\02-Stage_Categoria.dtsx [Dise\u00F1o]",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPaSURBVEhLtVVdaBRXFP5mdnbWZNvp\u002Bpc0iUmrSMQHnyoNrYpPVijEWFS0PvkkKCgKIYjYhxZEoZT6Uh9a\u002Bta\u002B2gYflLZECqUBi7UtIhVRNLSC68bdzWbdmb13Zjzn3ruTWe3WvPixh/s75\u002Bc759zFS0Ucx5aZ4tjJM5M7x8ZGoyiClhgypDEEZBwhDEMSGuksDGPM/PMAN2/e\u002BGTy2y8\u002Br1VKVaOmM46eOD1JihVIUSRJuxBh1GyGkd\u002BUUSOQ0RNfRvMNEdWeiOizr76PLlz\u002BpbZtz\u002BGPnaybNWqeg21G5V0LFsVl2xYyGQuOY8F1bOSyNpa4NrpzGXSRkAsYHOjPj4yMfPTu6MFxy85kzOdtSAzEFPpiEMeKWqIvxuWpadTrPq9PD7/13ri50obEgFyEAVZOqSHvgQ\u002B2b6IIXWSzOaxft46Pt6lLzyAxQMSbGdAIQsw3ZCJ1X4L0oh5IEP\u002Bo1gUKhWU4sG8U44f2Y/fOHfrD/4BjRlU17CHz/82VGdyac80JsMKqY2L3ML68dA8PRJfZBVZlfXy4dUhVWicsJJniZm5biJb2JsLuh8wN/dL7fJtzwWXcCakqojrveC9Wtb9gXqOVbCkXYYDKXyWvBXuulAgr1hHEbft8wPv/R1GSA\u002B4DSZdzsLBr0wD8JhkkhZwbxB6dA2PvDCAQupPZc8vKQ/C8cwDpHPBToGko5LPoKbhY6eWw3FuCwis59Wx43Vks7XbxWt6lOy66XUcZ4vx1QqpMdQScr99ul/HDtSJ\u002BvF7E1B9F/Pr3rPKSuRakjJWy5/RTTrF0QlsVCcm0xvjzbhU/zXqYeuzhStnD72QwpDNJNHEhMF0xiZTsvTbSCakkhxSF9oZph0N9YISX9O6RMs0956s45yt5WPUx74co9Ax6fas3jLAg1zuslBJSFPHHTBOv2j3i9mBPVUmy0PznGw8RBD6E8NHf52Fi4tTGc19fnD57/rtprNr1qfk0ZYDffKVId7Tz7\u002B1EGNo4VxXNSdiFDW\u002B\u002BirW9XXg9Ty\u002BsTed\u002BgHszFXW/hYUcELFKCXG7Z/Mgju9YiyPvr8Gh7Wuwd8uQ2peUB8G8czhkQVDJVmoBZkkeVXyUSB5VGkajRluSVRKVEZ0LpdR4viC8pyMIqCrKtSYeVwNlqDynxzTachBy6ysP2VsaSSHvcadyw6kCoH02ymhSBLOkvMzK2RAJv7RpJJ0spMDVa3\u002BhWCqbN193sepmZdzs8ZovFN5Abb6JUtknxdp7HmvPGEj\u002B9Ff0DW2J4AyY5Qux/O0T5/pX9vYw74EIVTSCG5GkdP/qRdw5P2auvkwATwH5qMc\u002BQnI//gAAAABJRU5ErkJggg==",
-              "WhenOpened": "2025-06-09T23:15:24.589Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CargaMaster.dtsx [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\AnaliticaDeDatos\\02-Desarrollo-etl\\ETLNorthwind\\ETLNorthwind\\CargaMaster.dtsx",
-              "RelativeDocumentMoniker": "ETLNorthwind\\CargaMaster.dtsx",
-              "ToolTip": "C:\\AnaliticaDeDatos\\02-Desarrollo-etl\\ETLNorthwind\\ETLNorthwind\\CargaMaster.dtsx [Dise\u00F1o]",
-              "RelativeToolTip": "ETLNorthwind\\CargaMaster.dtsx [Dise\u00F1o]",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPaSURBVEhLtVVdaBRXFP5mdnbWZNvp\u002Bpc0iUmrSMQHnyoNrYpPVijEWFS0PvkkKCgKIYjYhxZEoZT6Uh9a\u002Bta\u002B2gYflLZECqUBi7UtIhVRNLSC68bdzWbdmb13Zjzn3ruTWe3WvPixh/s75\u002Bc759zFS0Ucx5aZ4tjJM5M7x8ZGoyiClhgypDEEZBwhDEMSGuksDGPM/PMAN2/e\u002BGTy2y8\u002Br1VKVaOmM46eOD1JihVIUSRJuxBh1GyGkd\u002BUUSOQ0RNfRvMNEdWeiOizr76PLlz\u002BpbZtz\u002BGPnaybNWqeg21G5V0LFsVl2xYyGQuOY8F1bOSyNpa4NrpzGXSRkAsYHOjPj4yMfPTu6MFxy85kzOdtSAzEFPpiEMeKWqIvxuWpadTrPq9PD7/13ri50obEgFyEAVZOqSHvgQ\u002B2b6IIXWSzOaxft46Pt6lLzyAxQMSbGdAIQsw3ZCJ1X4L0oh5IEP\u002Bo1gUKhWU4sG8U44f2Y/fOHfrD/4BjRlU17CHz/82VGdyac80JsMKqY2L3ML68dA8PRJfZBVZlfXy4dUhVWicsJJniZm5biJb2JsLuh8wN/dL7fJtzwWXcCakqojrveC9Wtb9gXqOVbCkXYYDKXyWvBXuulAgr1hHEbft8wPv/R1GSA\u002B4DSZdzsLBr0wD8JhkkhZwbxB6dA2PvDCAQupPZc8vKQ/C8cwDpHPBToGko5LPoKbhY6eWw3FuCwis59Wx43Vks7XbxWt6lOy66XUcZ4vx1QqpMdQScr99ul/HDtSJ\u002BvF7E1B9F/Pr3rPKSuRakjJWy5/RTTrF0QlsVCcm0xvjzbhU/zXqYeuzhStnD72QwpDNJNHEhMF0xiZTsvTbSCakkhxSF9oZph0N9YISX9O6RMs0956s45yt5WPUx74co9Ax6fas3jLAg1zuslBJSFPHHTBOv2j3i9mBPVUmy0PznGw8RBD6E8NHf52Fi4tTGc19fnD57/rtprNr1qfk0ZYDffKVId7Tz7\u002B1EGNo4VxXNSdiFDW\u002B\u002BirW9XXg9Ty\u002BsTed\u002BgHszFXW/hYUcELFKCXG7Z/Mgju9YiyPvr8Gh7Wuwd8uQ2peUB8G8czhkQVDJVmoBZkkeVXyUSB5VGkajRluSVRKVEZ0LpdR4viC8pyMIqCrKtSYeVwNlqDynxzTachBy6ysP2VsaSSHvcadyw6kCoH02ymhSBLOkvMzK2RAJv7RpJJ0spMDVa3\u002BhWCqbN193sepmZdzs8ZovFN5Abb6JUtknxdp7HmvPGEj\u002B9Ff0DW2J4AyY5Qux/O0T5/pX9vYw74EIVTSCG5GkdP/qRdw5P2auvkwATwH5qMc\u002BQnI//gAAAABJRU5ErkJggg==",
-              "WhenOpened": "2025-06-09T23:15:19.649Z",
+              "WhenOpened": "2025-06-11T04:05:51.076Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]

@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>Stage_Northwind</Name>
-    <LastWriteTime>2025-06-06T23:54:38.3737345Z</LastWriteTime>
+    <LastWriteTime>2025-06-11T04:40:13.2682954Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -53,7 +53,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>001.Stage _Empleado (1).dtsx</Name>
-      <LastWriteTime>2025-06-07T07:02:21.6263417Z</LastWriteTime>
+      <LastWriteTime>2025-06-11T04:40:09.7450828Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
